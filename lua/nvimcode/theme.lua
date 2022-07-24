@@ -417,6 +417,8 @@ theme.set_highlights = function()
     hl(0, 'LspReferenceWrite', { fg = c.none, bg = c.PopupHighlightGray})
 
     -- Nvim compe
+		hl(0, 'CmpBorder', {fg = "#42464e", bg = c.none})
+		hl(0, 'CmpDocBorder', { fg = "#1b1f27", bg = "#1b1f27" })
     hl(0, 'CmpItemKindVariable', { fg = c.LightBlue, bg = c.none })
     hl(0, 'CmpItemKindInterface', { fg = c.LightBlue, bg = c.none })
     hl(0, 'CmpItemKindText', { fg = c.LightBlue, bg = c.none })
