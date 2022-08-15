@@ -5,6 +5,7 @@ colors = {
 
     Front = '#D4D4D4',
     Back = '#1E1E1E',
+    -- Back = 'None',
 
     TabCurrent = '#282C34',
     TabOther = '#7B7B7F',

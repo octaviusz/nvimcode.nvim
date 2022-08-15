@@ -406,7 +406,7 @@ theme.set_highlights = function()
   hl(0, 'GitSignsDeleteLn', { fg = c.Back, bg = c.Red })
 
   -- IndentBlankLine
-  hl(0, 'IndentBlanklineContextChar', { fg = c.ContextChar, bg = c.none, nocombine = true })
+  hl(0, 'IndentBlanklineContextChar', { fg = '#e5c76b', bg = c.none, nocombine = true })
   hl(0, 'IndentBlanklineContextStart', { fg = c.ContextCurrent, bg = c.none, nocombine = true })
   hl(0, 'IndentBlanklineChar', { fg = c.Context, bg = c.none, nocombine = true })
   hl(0, 'IndentBlanklineSpaceChar', { fg = c.Context, bg = c.none, nocombine = true })
@@ -571,12 +571,20 @@ theme.set_highlights = function()
   --NeoTree
   hl(0, "NeoTreeNormal", { bg = u.darken(c.Back, 0.95) })
   hl(0, "NeoTreeNormalNC", { bg = u.darken(c.Back, 0.95) })
+  -- hl(0, "NeoTreeNormal", { bg = c.Back})
+  -- hl(0, "NeoTreeNormalNC", { bg = c.Back})
+
   hl(0, "NeoTreeWinSeparator", { fg = c.Back })
   hl(0, "NeoTreeRootName", { bold = true })
+  hl(0, "NeoTreeIndentMarker", { fg = '#333333' })
 
   -- Fidget
   hl(0, "FidgetTitle", { fg = '#ffffff' })
   hl(0, "FidgetTask", { fg = '#ffffff' })
+
+  hl(0, "HopNextKey", { fg = c.warning, })
+  hl(0, "HopNextKey1", { fg = c.info, })
+  hl(0, "HopNextKey2", { fg = '#1E1E1E', })
 
   -- hl(0, "DapUIThread", { fg = })
   -- hl(0, "DapUIFrameName", { fg = })
