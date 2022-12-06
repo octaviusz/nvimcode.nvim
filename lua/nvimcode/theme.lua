@@ -70,7 +70,7 @@ theme.set_highlights = function()
   hl(0, 'Include', { fg = c.Pink, bg = c.none })
   hl(0, 'Define', { fg = c.Pink, bg = c.none })
   hl(0, 'Macro', { fg = c.Pink, bg = c.none })
-  hl(0, 'Type', { fg = c.Blue, bg = c.none })
+  hl(0, 'Type', { fg = c.BlueGreen, bg = c.none })
   hl(0, 'StorageClass', { fg = c.Blue, bg = c.none })
   hl(0, 'Structure', { fg = c.Blue, bg = c.none })
   hl(0, 'Typedef', { fg = c.Blue, bg = c.none })
@@ -112,7 +112,7 @@ theme.set_highlights = function()
   hl(0, 'TSFuncBuiltin', { fg = c.Yellow, bg = c.none })
   hl(0, 'TSFunction', { fg = c.Yellow, bg = c.none })
   hl(0, 'TSFuncMacro', { fg = c.Yellow, bg = c.none })
-  hl(0, 'TSParameter', { fg = c.LightBlue, bg = c.none })
+  hl(0, 'TSParameter', { fg = c.Blue, bg = c.none })
   hl(0, 'TSParameterReference', { fg = c.LightBlue, bg = c.none })
   hl(0, 'TSMethod', { fg = c.Yellow, bg = c.none })
   hl(0, 'TSField', { fg = c.LightBlue, bg = c.none })
@@ -518,10 +518,10 @@ theme.set_highlights = function()
   hl(0, "DiagnosticVirtualTextInfo", { bg = u.darken(c.info, 0.4), fg = c.info }) -- Used for "Information" diagnostic virtual text
   hl(0, "DiagnosticVirtualTextHint", { bg = u.darken(c.hint, 0.4), fg = c.hint }) -- Used for "Hint" diagnostic virtual text
 
-  hl(0, "DiagnosticUnderlineError", { bg = u.darken(c.error, 0.4), sp = c.error }) -- Used to underline "Error" diagnostics
-  hl(0, "DiagnosticUnderlineWarn", { bg = u.darken(c.warning, 0.4), sp = c.warning }) -- Used to underline "Warning" diagnostics
-  hl(0, "DiagnosticUnderlineInfo", { bg = u.darken(c.info, 0.4), sp = c.info }) -- Used to underline "Information" diagnostics
-  hl(0, "DiagnosticUnderlineHint", { bg = u.darken(c.hint, 0.4), sp = c.hint }) -- Used to underline "Hint" diagnostics
+  hl(0, "DiagnosticUnderlineError", { bg = u.darken(c.error, 0.3), sp = c.error }) -- Used to underline "Error" diagnostics
+  hl(0, "DiagnosticUnderlineWarn", { bg = u.darken(c.warning, 0.3), sp = c.warning }) -- Used to underline "Warning" diagnostics
+  hl(0, "DiagnosticUnderlineInfo", { bg = u.darken(c.info, 0.3), sp = c.info }) -- Used to underline "Information" diagnostics
+  hl(0, "DiagnosticUnderlineHint", { bg = u.darken(c.hint, 0.3), sp = c.hint }) -- Used to underline "Hint" diagnostics
 
   -- Semantic token highlights
   hl(0, "LspNamespace", { link = "TSNamespace" })
@@ -533,7 +533,7 @@ theme.set_highlights = function()
   hl(0, "LspStruct", { link = "TSStruct" })
   hl(0, "LspTypeParameter", { link = "TSParameter" })
   hl(0, "LspParameter", { link = "TSParameter" })
-  hl(0, "LspVariable", { link = "TSVariable" })
+  -- hl(0, "LspVariable", { link = "TSVariable" })
   hl(0, "LspProperty", { link = "TSProperty" })
   hl(0, "LspEnumMember", { link = "TSEnumMember" })
   hl(0, "LspEvent", { link = "TSEvent" })
