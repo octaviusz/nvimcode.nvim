@@ -3,7 +3,7 @@ local u = require("nvimcode.utils")
 
 local hl = vim.api.nvim_set_hl
 local theme = {}
-local transparent = false
+local transparent = true
 
 theme.set_highlights = function()
 	if transparent then
@@ -30,8 +30,8 @@ theme.set_highlights = function()
 	hl(0, "EndOfBuffer", { fg = c.Back, bg = c.none })
 	hl(0, "ErrorMsg", { fg = c.Red, bg = c.Back })
 	hl(0, "Folded", { fg = c.none, bg = c.FoldBackground })
-	hl(0, "FoldColumn", { fg = c.LineNumber, bg = c.Back })
-	hl(0, "SignColumn", { fg = c.none, bg = c.Back })
+	hl(0, "FoldColumn", { fg = c.LineNumber, bg = c.none })
+	hl(0, "SignColumn", { fg = c.none, bg = c.none })
 	hl(0, "IncSearch", { fg = c.None, bg = c.SearchCurrent })
 	hl(0, "LineNr", { fg = c.LineNumber, bg = c.none })
 	hl(0, "CursorLineNr", { fg = c.CursorLineNumber, bg = c.Back })
